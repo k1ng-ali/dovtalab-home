@@ -3,17 +3,19 @@ import { onMounted, ref } from 'vue'
 import { useGsap } from '../composables/useGsap'
 import { fetchLandingStats } from '../composables/useApi'
 
-const { gsap, ScrollTrigger, animateCounter } = useGsap()
+const { animateCounter } = useGsap()
 
 const usersEl = ref<HTMLElement | null>(null)
 const quizzesEl = ref<HTMLElement | null>(null)
 const attemptsEl = ref<HTMLElement | null>(null)
 
+/*
 const stats = [
   { ref: usersEl, label: 'Пользователей', fallback: 1200 },
   { ref: quizzesEl, label: 'Квизов создано', fallback: 350 },
   { ref: attemptsEl, label: 'Попыток пройдено', fallback: 28000 },
 ]
+ */
 
 onMounted(async () => {
   const data = await fetchLandingStats()

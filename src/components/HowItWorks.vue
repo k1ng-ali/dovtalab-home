@@ -2,7 +2,7 @@
 import { onMounted } from 'vue'
 import { useGsap } from '../composables/useGsap'
 
-const { gsap, ScrollTrigger } = useGsap()
+const { gsap } = useGsap()
 
 const steps = [
   {
