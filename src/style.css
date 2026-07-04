@@ -51,10 +51,12 @@
 
 html {
   scroll-behavior: auto; /* Lenis handles smooth scroll */
+  overflow-x: hidden;
 }
 
 body {
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Typography */
@@ -109,6 +111,7 @@ img {
 .section {
   padding: 120px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .section--alt {
@@ -228,4 +231,10 @@ img {
   .container {
     padding: 0 16px;
   }
+}
+
+/* App wrapper — prevent horizontal overflow */
+#app {
+  overflow-x: hidden;
+  width: 100%;
 }

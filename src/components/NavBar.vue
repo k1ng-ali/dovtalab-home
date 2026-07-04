@@ -48,6 +48,9 @@ onMounted(() => {
   z-index: 1000;
   padding: 16px 0;
   transition: all var(--transition);
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .navbar--scrolled {
